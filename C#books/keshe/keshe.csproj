@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38701E6F-DE48-4FD0-92BF-D08B66A1729B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>keshe</RootNamespace>
+    <AssemblyName>keshe</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addBook.Designer.cs">
+      <DependentUpon>addBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminDelete.Designer.cs">
+      <DependentUpon>adminDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delBookClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delBookClass.Designer.cs">
+      <DependentUpon>delBookClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lockaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lockaccount.Designer.cs">
+      <DependentUpon>lockaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newBookClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newBookClass.Designer.cs">
+      <DependentUpon>newBookClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookNum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookNum.Designer.cs">
+      <DependentUpon>bookNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookSearch.Designer.cs">
+      <DependentUpon>bookSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buy.Designer.cs">
+      <DependentUpon>buy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delBook.Designer.cs">
+      <DependentUpon>delBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delOrder.Designer.cs">
+      <DependentUpon>delOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoUser.Designer.cs">
+      <DependentUpon>infoUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orderdelSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderdelSelect.Designer.cs">
+      <DependentUpon>orderdelSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orderSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderSearch.Designer.cs">
+      <DependentUpon>orderSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orderState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderState.Designer.cs">
+      <DependentUpon>orderState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="info.Designer.cs">
+      <DependentUpon>info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateBook.Designer.cs">
+      <DependentUpon>updateBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateBookClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateBookClass.Designer.cs">
+      <DependentUpon>updateBookClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userCreate.Designer.cs">
+      <DependentUpon>userCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userDel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userDel.Designer.cs">
+      <DependentUpon>userDel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userSearch.Designer.cs">
+      <DependentUpon>userSearch.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addBook.resx">
+      <DependentUpon>addBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminDelete.resx">
+      <DependentUpon>adminDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookNum.resx">
+      <DependentUpon>bookNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookSearch.resx">
+      <DependentUpon>bookSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buy.resx">
+      <DependentUpon>buy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delBook.resx">
+      <DependentUpon>delBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delBookClass.resx">
+      <DependentUpon>delBookClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delOrder.resx">
+      <DependentUpon>delOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="info.resx">
+      <DependentUpon>info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoUser.resx">
+      <DependentUpon>infoUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lockaccount.resx">
+      <DependentUpon>lockaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newBookClass.resx">
+      <DependentUpon>newBookClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderdelSelect.resx">
+      <DependentUpon>orderdelSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderSearch.resx">
+      <DependentUpon>orderSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderState.resx">
+      <DependentUpon>orderState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="updateBook.resx">
+      <DependentUpon>updateBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateBookClass.resx">
+      <DependentUpon>updateBookClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userCreate.resx">
+      <DependentUpon>userCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userDel.resx">
+      <DependentUpon>userDel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userSearch.resx">
+      <DependentUpon>userSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
