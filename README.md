@@ -1,2 +1,2 @@
 # evosimy
-some source of evosimy
+some resources of evosimy
